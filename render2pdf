@@ -1,0 +1,6 @@
+#!/bin/sh
+
+. ./secrets.sh
+
+sed -e "s/{{PHNUMBER}}/$PHNUMBER/g;s/{{ADDRESS_CITY}}/$ADDRESS_CITY/g" resume.html >result.html
+wkhtmltopdf --page-size A4 --page-width 125 --page-height 199.5 --enable-local-file-access -T 0 -B 0 -L 0 -R 0 --background --user-style-sheet ./style.css --zoom 30 --images resume.html result.html

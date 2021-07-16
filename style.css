@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: "Source Code Pro";
+}
+
+.grid-container {
+  height: 100%;
+  width: 100%;
+}
+
+.contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background-color: #9ce1d8;
+
+  padding: 30px;
+}
+
+.contact > h1 {
+  line-height: 0.8;
+  font-size: 28px;
+  postion: relative;
+}
+
+.contact > h1:after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 10px;
+  width: 25%;
+  border-bottom: 1px solid black;
+}
+
+.contact > ul {
+  margin-top: 8px;
+  list-style: none;
+  font-size: 10px;
+  padding-left: 0px;
+}
+
+.contact > ul > li {
+  padding: 3px 0 0 0;
+  text-indent: 0;
+}
+
+.contact > ul > li:before {
+  content: "";
+  padding: 0px;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 207px;
+  bottom: 0;
+
+  width: 200px;
+
+  background-color: #ecf9f8;
+  color: #007061;
+  padding: 5px 30px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  margin-top: 5px;
+  padding-left: 0;
+  font-size: 10px;
+}
+
+ul > li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+ul > li:before {
+  content: "-";
+  padding-right: 5px;
+}
+
+h3 {
+  padding-top: 30px;
+  font-size: 15px;
+}
+
+h4 {
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 10px;
+}
+
+p {
+  padding: 0 0;
+  font-size: 10px;
+}
+
+.background > h6 {
+  size: 20px;
+}
+
+.summary {
+  position: absolute;
+  top:0;
+  left: 260px;
+  right: 0;
+  
+  height: 187px;
+
+  background-color: #ecf9f8;
+  padding: 10px 50px;
+}
+
+.history {
+  position: absolute;
+  top: 207px;
+  bottom: 0;
+  right: 0;
+  left: 260px;
+
+  padding: 10px 50px;
+  background: white;
+}
+
+.history > h4 {
+  display: inline-block;
+  padding-top: 8px;
+}
+
+.history > h6 {
+  display: inline;
+}
+
+i {
+  display: inline;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  width: 8px;
+  height: 8px;
+  color: #9ce1d8;
+  text-align: center;
+}
+
+.content {
+  width: 750px;
+  margin: 0 auto;
+}
